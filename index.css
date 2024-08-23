@@ -1,3 +1,23 @@
+.delete-btn {
+    text-decoration: none;
+    color: antiquewhite;
+   background-color: red;
+    box-shadow: black;
+    font-family: 'Poppins';
+    width: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
+.edit-btn {
+    text-decoration: none;
+    color: antiquewhite;
+    background-color: #24d1fb;
+    box-shadow: black;
+    font-family: 'Poppins';
+    width: 20px;
+    padding: 5px 10px;
+    border-radius: 10px;
+}
 .add-btn {
     text-decoration: none;
     color: antiquewhite;
