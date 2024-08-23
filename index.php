@@ -6,9 +6,6 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="index.css">
-    <?php
-    require_once "database.php";
-    ?>
     <title>Document</title>
 </head>
 <body>
@@ -22,6 +19,8 @@
         <th>Email</th>
         <th>Password</th>
         <th>Address</th>
+        <th>Edit</th>
+        <th>Delete</th>
     </tr>
     </thead>
     <tbody>
@@ -41,6 +40,8 @@ if ($result->num_rows > 0) {
         echo "<td>" . htmlspecialchars($row['email']) . "</td>";
         echo "<td>" . htmlspecialchars($row['password']) . "</td>";
         echo "<td>" . htmlspecialchars($row['address']) . "</td>";
+        echo "<td><a href='edit.php?id=" . htmlspecialchars($row['id']) . "' class='edit-btn'>Edit</a></td>";
+        echo "<td><a href='delete.php?id=" . htmlspecialchars($row['id']) . "' class='delete-btn'>Delete</a></td>";
         echo "</tr>";
     }
 } else {
